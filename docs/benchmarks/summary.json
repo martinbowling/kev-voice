@@ -1,0 +1,1211 @@
+{
+  "harness": "KevVoice --router-test (11 synthetic decisions: 8 policy + 420-option catalogue + literal span + keyboard chord)",
+  "protocol": "One server start per checkpoint, one warmup decision, then 8 consecutive harness runs",
+  "machine": {
+    "chip": "Apple silicon",
+    "os": "macOS-14.7.1-arm64-arm-64bit"
+  },
+  "date": "2026-09-22",
+  "checkpoints": {
+    "kev-4b": {
+      "scores": [
+        8,
+        9,
+        7,
+        8,
+        9,
+        7,
+        9,
+        9
+      ],
+      "mean": 8.25,
+      "median_api_ms": 676,
+      "runs": [
+        {
+          "run": 1,
+          "passed": 8,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 524
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 579
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 577
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 630
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 678
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 678
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "type_text",
+              "passed": false,
+              "api_ms": 630
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "blue",
+              "passed": true,
+              "api_ms": 637
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river in the Practice text field",
+              "passed": false,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+Option+A",
+              "passed": false,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 2,
+          "passed": 9,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 784
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 751
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 742
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 813
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 879
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 875
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "type_text",
+              "passed": false,
+              "api_ms": 805
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "blue",
+              "passed": true,
+              "api_ms": 801
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river",
+              "passed": true,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+Option+A",
+              "passed": false,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 3,
+          "passed": 7,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 790
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "focus",
+              "passed": false,
+              "api_ms": 731
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 722
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 824
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 898
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 906
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "type_text",
+              "passed": false,
+              "api_ms": 859
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "blue",
+              "passed": true,
+              "api_ms": 863
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river in the Practice text field, then press Tab.",
+              "passed": false,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+Option+A",
+              "passed": false,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 4,
+          "passed": 8,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 517
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "focus",
+              "passed": false,
+              "api_ms": 567
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 562
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 624
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 655
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 672
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "focus",
+              "passed": false,
+              "api_ms": 613
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "blue",
+              "passed": true,
+              "api_ms": 643
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river in the Practice text field",
+              "passed": false,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+A",
+              "passed": true,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 5,
+          "passed": 9,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 725
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "focus",
+              "passed": false,
+              "api_ms": 638
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 627
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 688
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 734
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 740
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "focus",
+              "passed": false,
+              "api_ms": 679
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "blue",
+              "passed": true,
+              "api_ms": 675
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river",
+              "passed": true,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+A",
+              "passed": true,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 6,
+          "passed": 7,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 633
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "focus",
+              "passed": false,
+              "api_ms": 601
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 577
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 650
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 756
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 697
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "type_text",
+              "passed": false,
+              "api_ms": 662
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "blue",
+              "passed": true,
+              "api_ms": 662
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river in the Practice text field",
+              "passed": false,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+Control+A",
+              "passed": false,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 7,
+          "passed": 9,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 669
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 603
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 593
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 689
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 740
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 757
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "type_text",
+              "passed": false,
+              "api_ms": 679
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "blue",
+              "passed": true,
+              "api_ms": 673
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river in the Practice text field",
+              "passed": false,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+A",
+              "passed": true,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 8,
+          "passed": 9,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 718
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 583
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 591
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 652
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 709
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 723
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "type_text",
+              "passed": false,
+              "api_ms": 666
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "blue",
+              "passed": true,
+              "api_ms": 669
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river in the Practice text field",
+              "passed": false,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+A",
+              "passed": true,
+              "api_ms": null
+            }
+          }
+        }
+      ]
+    },
+    "kev-9b": {
+      "scores": [
+        9,
+        8,
+        9,
+        9,
+        11,
+        9,
+        9,
+        9
+      ],
+      "mean": 9.12,
+      "median_api_ms": 1232,
+      "runs": [
+        {
+          "run": 1,
+          "passed": 9,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 929
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 1022
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 1002
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 1140
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 1390
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 1555
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "type_text",
+              "passed": false,
+              "api_ms": 1533
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "coral",
+              "passed": false,
+              "api_ms": 1514
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river",
+              "passed": true,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+A",
+              "passed": true,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 2,
+          "passed": 8,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 1610
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 1186
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 1204
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 1373
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 1471
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 1515
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "focus",
+              "passed": false,
+              "api_ms": 1469
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "coral",
+              "passed": false,
+              "api_ms": 1373
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river",
+              "passed": true,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+Control+A",
+              "passed": false,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 3,
+          "passed": 9,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 1341
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 1172
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 1235
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 1614
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 1448
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 1399
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "type_text",
+              "passed": false,
+              "api_ms": 1326
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "coral",
+              "passed": false,
+              "api_ms": 1344
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river",
+              "passed": true,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+A",
+              "passed": true,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 4,
+          "passed": 9,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 949
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 1056
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 1038
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 1139
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 1229
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 1216
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "none",
+              "passed": true,
+              "api_ms": 1127
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "coral",
+              "passed": false,
+              "api_ms": 1138
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river in the Practice text field",
+              "passed": false,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+A",
+              "passed": true,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 5,
+          "passed": 11,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 1311
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 1067
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 1053
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 1209
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 1332
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 1337
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "none",
+              "passed": true,
+              "api_ms": 1200
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "blue",
+              "passed": true,
+              "api_ms": 1198
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river",
+              "passed": true,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+A",
+              "passed": true,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 6,
+          "passed": 9,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 1214
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 1085
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 1078
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 1225
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 1298
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 1300
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "focus",
+              "passed": false,
+              "api_ms": 1254
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "coral",
+              "passed": false,
+              "api_ms": 1203
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river",
+              "passed": true,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+A",
+              "passed": true,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 7,
+          "passed": 9,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 1268
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 1041
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 1004
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 1266
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 1267
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 1260
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "type_text",
+              "passed": false,
+              "api_ms": 1155
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "blue",
+              "passed": true,
+              "api_ms": 1173
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "river in the Practice text field, then",
+              "passed": false,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+A",
+              "passed": true,
+              "api_ms": null
+            }
+          }
+        },
+        {
+          "run": 8,
+          "passed": 9,
+          "total": 11,
+          "cases": {
+            "policy expected=app": {
+              "expected": "app",
+              "selected": "app",
+              "passed": true,
+              "api_ms": 1285
+            },
+            "policy expected=coral": {
+              "expected": "coral",
+              "selected": "coral",
+              "passed": true,
+              "api_ms": 1057
+            },
+            "policy expected=focus": {
+              "expected": "focus",
+              "selected": "focus",
+              "passed": true,
+              "api_ms": 1054
+            },
+            "policy expected=type_text": {
+              "expected": "type_text",
+              "selected": "type_text",
+              "passed": true,
+              "api_ms": 1439
+            },
+            "policy expected=tab": {
+              "expected": "tab",
+              "selected": "tab",
+              "passed": true,
+              "api_ms": 1465
+            },
+            "policy expected=task_done": {
+              "expected": "task_done",
+              "selected": "task_done",
+              "passed": true,
+              "api_ms": 1327
+            },
+            "policy expected=none": {
+              "expected": "none",
+              "selected": "focus",
+              "passed": false,
+              "api_ms": 1241
+            },
+            "policy expected=blue": {
+              "expected": "blue",
+              "selected": "coral",
+              "passed": false,
+              "api_ms": 1217
+            },
+            "420 options including one beyond the old cap": {
+              "expected": null,
+              "selected": "control_397",
+              "passed": true,
+              "api_ms": null
+            },
+            "Model-selected literal span without command parser": {
+              "expected": null,
+              "selected": "moonstone river",
+              "passed": true,
+              "api_ms": null
+            },
+            "Joint shortcut selection respects the first requested key": {
+              "expected": null,
+              "selected": "Command+A",
+              "passed": true,
+              "api_ms": null
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+name: macOS build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: macos-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    runs-on: macos-15
+    timeout-minutes: 10
+    env:
+      KEV_SIGNING_IDENTITY: "-"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Check toolchain
+        run: |
+          test "$(uname -m)" = arm64
+          xcrun swift --version
+      - name: Build app
+        run: bash build.sh
+      - name: Verify signature
+        run: codesign --verify --strict 'dist/Kev Voice.app'
+      - name: Test command handling and action catalogue
+        run: "'dist/Kev Voice.app/Contents/MacOS/KevVoice' --self-test"
+      - name: Test local decision client with HTTP fixtures
+        run: "'dist/Kev Voice.app/Contents/MacOS/KevVoice' --activity-test"
