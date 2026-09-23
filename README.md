@@ -476,7 +476,12 @@ See Kev’s [README](https://github.com/jaredpalmer/kev) and `docs/model-cards/`
 - **GLiNER2** by Fastino AI — an earlier iteration of this fork used a local GLiNER2 classifier as the picker; it is documented here only as the accuracy comparison and is no longer part of the code.
 - The demo media in `assets/` belongs to the upstream jev-cua project and shows the original hosted-model behavior.
 
-App source in this fork follows the upstream jev-cua repository (no separate license file was published there at the time of writing). Kev is Apache-2.0; review its license and the Qwen3.5 base license before redistributing models.
+App code in this repository (the Swift app and the `kev/` scripts) is released under the [MIT License](LICENSE). Two scopes are excluded from that grant:
+
+- **Upstream jev-cua.** This is a derivative fork; the upstream repository published no license, so portions derived from it remain subject to the upstream author's rights. The MIT grant covers this fork's additions and modifications.
+- **Bundled demo media** in `assets/` belongs to the upstream jev-cua project and is included for reference only.
+
+Kev itself is Apache-2.0 and is cloned at setup time rather than vendored here; its checkpoints and the Qwen3.5 base weights are Apache-2.0, and their licenses govern redistribution of models.
 
 ---
 
